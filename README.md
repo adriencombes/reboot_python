@@ -21,7 +21,7 @@ touch /notebooks
 ```
 
 ```bash
-mkdir -p ../notebooks
+mkdir -p../notebooks
 ```
 
 ```bash
@@ -58,6 +58,14 @@ import .
 
 ```bash
 pip requests
+```
+
+```bash
+pip import requests
+```
+
+```bash
+python get "requests"
 ```
 
 
@@ -146,6 +154,9 @@ my_list.drop("jeanmich") = "10"
 remove(my_list[5])
 ```
 
+```python
+numbers.del[2]
+```
 
 
 ### 12. Rajoutez `-15` à la fin de cette liste
@@ -173,8 +184,8 @@ my_list.drop() = 10
 ```python
 my_second_list = []
 for number in my_list:
-    if number > 0:
-        return my_second_list.append(number)
+    if (number > 0):
+    return my_second_list.append(number)
 ```
 
 ```python
@@ -213,6 +224,10 @@ my_second_list = [number for number if number > 0 in my_list]
 ```
 
 ```python
+my_second_list = [x: x>=0 for x in numbers]
+```
+
+```python
 my_second_list = [number > 0 for number in my_list]
 ```
 
@@ -240,7 +255,7 @@ def my_fonction()
 
 ```python
 def my_fonction(number):
-    print(number**4)
+print(number**4)
 ```
 
 ```python
@@ -282,9 +297,13 @@ my_third_list = [number**4 for number in my_list]
 my_dict = requests.get(https://opengraph.lewagon.com/?url=https://www.lewagon.com)
 ```
 
+```python
+data = [{key:value}]
+response = request.get("https://opengraph.lewagon.com/?url=https://www.lewagon.com").json()
+result = response.append(data)
 
 
-### 21. Affichez les clés de ce dictionnaire. Combien d'élements contient la valeur associée à la clé `data` ?
+### 21. Affichez les clés de ce dictionnaire. Quel est le type de la valeur associée à la clé `data` ? Combien d'éléments comporte-t-elle ?
 
 *Pas de réponse proposée*
 
